@@ -1,0 +1,43 @@
+page-feed {
+    h2.feed_title {
+        color: dodgerblue;
+        font-weight: bold;
+    }
+
+    ion-icon.coracao{
+        color: red;
+    }
+
+    ion-icon.comments{
+        color: blueviolet;
+    }
+
+    div{
+        color: black;
+        font-style: bold;
+    }
+    img#ionic-img {
+        padding: inherit;
+        height: 100px;
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img#angular-img {
+        padding: inherit;
+        height: 100px;
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img#web-img {
+        padding: inherit;
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

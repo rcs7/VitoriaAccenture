@@ -1,0 +1,152 @@
+<!--
+  Generated template for the IntroductionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar>
+    <!-- <ion-icon name="battery-full"></ion-icon>
+    <ion-icon name="wifi"></ion-icon> -->
+
+    <!-- <ion-title>
+            </ion-title> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager>
+
+
+    <!-- Essa linha comentada abaixo, seria a tela toda preenchida com a cor verde -->
+    <!-- <ion-slide style="background-color: green"> -->
+    <!-- Obs que eu vou colocar o mesmo nome, ou seja, "slide", em cada class de ion-slide, 
+        pq no arq .scss vou usar pra modificar o tamanho das 3 imagens de uma vez -->
+    <ion-slide class="slide">
+
+      <img src="assets/imgs/ionic.png">
+
+
+      <!-- <ion-item *ngIf="show">
+        AQUI  1!
+      </ion-item>
+  
+      <ion-item *ngIf="!show"></ion-item>
+  
+      <button ion-button (click)="invert()">
+        Inverte
+      </button> -->
+
+      <div *ngIf="!show">
+        <ion-card-content>
+          <ul>
+            <li>One codebase;</li>
+            <li>Any platform;</li>
+            <li>Built on standard web technology, Ionic helps teams build and ship beautiful cross-platform hybrid and
+              Progressive Web Apps with ease.</li>
+          </ul>
+        </ion-card-content>
+      </div>
+
+      <button ion-button (click)="invert()"><strong>Saiba Mais</strong></button>
+      <br>
+      <br>
+      <br>
+
+    </ion-slide>
+
+    <ion-slide class="slide2">
+      <img src="assets/imgs/angular.png">
+      <h2><strong>Angular</strong></h2>
+      <!-- <p>{{ impressaoIonic}}</p>
+      <button ion-button (click)="printOkDois()"><strong>Saiba Mais</strong></button>
+      <div *ngIf="impressaoAngular===1">
+
+        <ion-card-content>
+          <ul>
+            <li>DEVELOP ACROSS ALL PLATFORMS;</li>
+            <li>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any
+              deployment target. For web, mobile web, native mobile and native desktop.</li>
+          </ul>
+        </ion-card-content>
+      </div> -->
+
+      <div *ngIf="!show">
+        <ion-card-content>
+          <ul>
+            <li>DEVELOP ACROSS ALL PLATFORMS;</li>
+            <li>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any
+              deployment target. For web, mobile web, native mobile and native desktop.</li>
+          </ul>
+        </ion-card-content>
+      </div>
+
+      <button ion-button (click)="invert()"><strong>Saiba Mais</strong></button>
+      <br>
+      <br>
+      <br>
+    </ion-slide>
+    
+    <ion-slide class="slide3">
+      <div class="imagens"><img src="assets/imgs/html.jpg">
+        <img src="assets/imgs/type.png">
+        <img src="assets/imgs/sass.jpg">
+      </div>
+     <!-- <button ion-button (click)="printOkTres()"><strong>Saiba Mais</strong></button>
+      <div *ngIf="impressaoWeb===1">
+        <ion-card-content>
+          <ul>
+            <li>Latest Version: HTML5;</li>
+            <li>TypeScript is a superset of JavaScript developed by Microsoft that adds typing and some other features
+              to the language;</li>
+            <li>Sass is a style sheet language originally designed by Hampton Catlin and developed by Natalie
+              Weizenbaum.</li>
+          </ul>
+        </ion-card-content>
+      </div>
+      <div>
+        <br>
+    </div>
+     -->
+
+        <div *ngIf="!show">
+          <ion-card-content>
+            <ul>
+              <li>Latest Version: HTML5;</li>
+              <li>TypeScript is a superset of JavaScript developed by Microsoft that adds typing and some other features
+                to the language;</li>
+              <li>Sass is a style sheet language originally designed by Hampton Catlin and developed by Natalie
+                Weizenbaum.</li>
+            </ul>
+          </ion-card-content>
+        </div>
+
+        <button ion-button (click)="invert()"><strong>Saiba Mais</strong></button>
+        <br>
+        <br>
+        <br>
+
+        <!-- <button ion-button ng-click =""> -->
+
+        <ion-footer>
+
+          <a (click)="goToTabsPage()">Lets go??? CLICK HERE!</a>
+          <br>
+          <br>
+          
+          <br>
+        </ion-footer>
+    </ion-slide>
+
+
+  </ion-slides>
+</ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

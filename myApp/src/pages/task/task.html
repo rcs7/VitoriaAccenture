@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Save links</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header no-lines>
+      Enter a New link with the format: https://site
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label floating>Format: https://site</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <button ion-button icon-start (click)="addTask()">
+    <ion-icon name="add"></ion-icon>
+    Add
+    <!-- {{ task?.description ? 'Edit' : 'Add' }} -->
+  </button>
+
+</ion-content>

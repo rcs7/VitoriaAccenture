@@ -1,0 +1,20 @@
+page-introduction {
+    // toda alguma coisa que estiver dentro desta class .slide img
+    .slide img{
+        width: 230px;
+    }
+    //a imagem do símbolo do angular é um pouco maior, então vou por ela um pouco menor
+    .slide2 img{
+        width: 180px;
+    }
+    .slide3 img{
+        width: 70px;
+        height: 70px;
+    }
+   
+
+    li{
+        text-align: justify;
+      //  text-align: center;
+    }
+}

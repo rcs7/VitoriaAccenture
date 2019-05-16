@@ -1,0 +1,192 @@
+  <!--
+  Generated template for the FeedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+ 
+<!--header é a parte que fica como uma faixa na parte de cima.  -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Feed</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--conteúdo da pág, que é como se fosse o corpo -->
+<ion-content padding> 
+
+  <ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/imgs/avatar.jpg">
+    </ion-avatar>
+    <!--Era assim antes de eu colocar o código json no feed.ts:-->   
+    <h2 class="feed_title"> {{ userName }} </h2> 
+    <!-- <h2 class="feed_title">{{ objetctFeed.titulo }}</h2> -->
+    <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+    <p>May 11, 2019</p>
+    <!-- <p>{{ objectFeed.data }</p> -->
+  </ion-item>
+  
+  <img id="ionic-img" src="assets/imgs/ionic.png">
+  <img id="angular-img" src="assets/imgs/angular.png">
+  <img id="web-img" src="assets/imgs/web.jpg">
+  
+  <ion-card-content>
+    <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+    <p>I'm studying a lot and I'll create an excellent app...</p>
+    <!-- <p>{{ objectFeed.description }}</p> -->
+  </ion-card-content>
+  
+  <ion-row>
+      <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon class="coracao" name="heart"></ion-icon>
+            <!--Era assim antes de eu colocar o código json no feed.ts:-->
+            <div>200 Hearts</div>
+            <!-- <div>{{ objectFeed.qtdHearts }} Hearts</div> -->
+          </button>
+      </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <!--Era assim antes de eu colocar o código json no feed.ts:-->
+        <div>3000 Likes</div>
+        <!-- <div>{{ objectFeed.qtdLikes }} Likes</div> -->
+      </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon class="comments" name="text"></ion-icon>
+        <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+        <div>7 Comments</div>
+        <!-- <div>{{ objectFeed.qtdComments }} Comments</div> -->
+          </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+         <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+         8h ago 
+         <!-- {{ objectFeed.timeComment }} -->
+      </ion-note>
+    </ion-col>
+  </ion-row>
+  </ion-card>
+<!-- --------------------------------------------------------------------------------------------------- -->
+<ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/amanda.jpg">
+      </ion-avatar>
+      <!--Era assim antes de eu colocar o código json no feed.ts:-->   
+      <h2 class="feed_title"> Amanda Silva </h2> 
+      <!-- <h2 class="feed_title">{{ objetctFeed.titulo }}</h2> -->
+      <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+      <p>May 11, 2019</p>
+      <!-- <p>{{ objectFeed.data }</p> -->
+    </ion-item>
+    
+    <img id="programar-img" src="assets/imgs/programar.png">
+    
+    <ion-card-content>
+      <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+      <p>I love Angular :) </p>
+      <!-- <p>{{ objectFeed.description }}</p> -->
+    </ion-card-content>
+    
+    <ion-row>
+        <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon class="coracao" name="heart"></ion-icon>
+              <!--Era assim antes de eu colocar o código json no feed.ts:-->
+              <div>222 Hearts</div>
+              <!-- <div>{{ objectFeed.qtdHearts }} Hearts</div> -->
+            </button>
+        </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <!--Era assim antes de eu colocar o código json no feed.ts:-->
+          <div>300 Likes</div>
+          <!-- <div>{{ objectFeed.qtdLikes }} Likes</div> -->
+        </button>
+      </ion-col>
+      <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon class="comments" name="text"></ion-icon>
+          <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+          <div>2 Comments</div>
+          <!-- <div>{{ objectFeed.qtdComments }} Comments</div> -->
+            </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+           <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+           10h ago 
+           <!-- {{ objectFeed.timeComment }} -->
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    </ion-card>
+
+  <!------------------------------------------------------------------------------------------------------->
+  <ion-card>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="assets/imgs/karla.jpg">
+    </ion-avatar>
+    <!--Era assim antes de eu colocar o código json no feed.ts:-->   
+    <h2 class="feed_title"> Karla Cristovam </h2> 
+    <!-- <h2 class="feed_title">{{ objetctFeed.titulo }}</h2> -->
+    <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+    <p>May 10, 2019</p>
+    <!-- <p>{{ objectFeed.data }</p> -->
+  </ion-item>
+  
+  <img id="ionic-img" src="assets/imgs/ionic.png">
+  
+  <ion-card-content>
+    <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+    <p>I'm impressed with the ionic. I love developing apps.</p>
+    <!-- <p>{{ objectFeed.description }}</p> -->
+  </ion-card-content>
+  
+  <ion-row>
+      <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon class="coracao" name="heart"></ion-icon>
+            <!--Era assim antes de eu colocar o código json no feed.ts:-->
+            <div>100 Hearts</div>
+            <!-- <div>{{ objectFeed.qtdHearts }} Hearts</div> -->
+          </button>
+      </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <!--Era assim antes de eu colocar o código json no feed.ts:-->
+        <div>4000 Likes</div>
+        <!-- <div>{{ objectFeed.qtdLikes }} Likes</div> -->
+      </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon class="comments" name="text"></ion-icon>
+        <!--Era assim antes de eu colocar o código json no feed.ts:-->  
+        <div>1 Comments</div>
+        <!-- <div>{{ objectFeed.qtdComments }} Comments</div> -->
+          </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+         <!--Era assim antes de eu colocar o código json no feed.ts:--> 
+         16h ago 
+         <!-- {{ objectFeed.timeComment }} -->
+      </ion-note>
+    </ion-col>
+  </ion-row>
+  </ion-card>
+
+</ion-content>

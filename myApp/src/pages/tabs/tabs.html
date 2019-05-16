@@ -1,0 +1,22 @@
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  
+  <ion-tab [root]="tab2Root" tabTitle="Links" tabIcon="link"></ion-tab>
+
+  <ion-tab [root]="tab3Root" tabTitle="Goals" tabIcon="clipboard"></ion-tab>
+
+  <!-- <ion-tab [root]="tab3Root" tabTitle="Links" tabIcon="link"></ion-tab> -->
+
+  <!-- Incluo essa linha por conta da aba que quero que é a de feed.
+  aq ele está fazendo o bind -->       
+                                    <!--Feed ´será o nome da aba  -->
+  <ion-tab [root]="tab4Root" tabTitle="Feed" tabIcon="paper"></ion-tab>
+
+
+<ion-tab [root]="tab7Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
+
+<!-- Obs q lá em tabs.ts que na class TabsPage. O controller do que vai  ser carregado em cada tab
+ tab1Root = HomePage;
+  tab2Root = AboutPage;
+  tab3Root = ContactPage;-->

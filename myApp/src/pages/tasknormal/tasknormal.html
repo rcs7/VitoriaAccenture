@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Save Goals</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header no-lines>
+      Enter a new goal
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label floating>Type here</ion-label>
+      <ion-input type="text" [(ngModel)]="descriptio1n"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <button ion-button icon-start (click)="addTas1k()">
+    <ion-icon name="add"></ion-icon>
+    {{ task?.description ? 'Edit' : 'Add' }}
+  </button>
+
+</ion-content>

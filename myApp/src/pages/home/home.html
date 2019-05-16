@@ -1,0 +1,59 @@
+<!-- ion-header é um componente pai que contém a barra de navegação -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Links</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- ion-content é um componente pai que contém todo o conteúdo de uma página e só pode existir um por página. -->
+<!-- Os atributos dos elementos Ionic como o padding podem ser encontrados neste link: https://ionicframework.com/docs/v3/theming/css-utilities/ -->
+<ion-content padding>
+
+  <ion-list>
+    <ion-list-header no-lines>
+      My links:
+    </ion-list-header>
+
+    <ion-item *ngFor="let task of tasks; let i=index">
+      <!-- 
+        O Angular permite que todos os atributos de um elemento possam receber variáveis ou pedaços de códigos, 
+        como o atributo name abaixo. Para fazer isso basta colocar os atributos entre colchetes: [name]
+      -->
+      <ion-icon item-start 
+        [name]="task.done ? 'checkmark-circle-outline' : 'radio-button-off'"
+        (click)="markAsDone(task)">
+      </ion-icon>
+
+      <span (click)="editTask(task.description, i)">
+        <p><a href="{{ task.description }}" title="Click here to visit website">{{ task.description }}</a></p>
+        <!-- {{ task.description }} -->
+      </span>
+
+      <ion-icon item-end name="trash" color="blue" 
+        (click)="deleteTask(i)">
+      </ion-icon>
+    </ion-item>
+
+    <!-- 
+      Quando usamos o sinal de negação para numbers essas são as operações boolean equivalentes:
+        !0 === false
+        !1 === true 
+      
+      Ou seja, o elemento abaixo soó vai aparecer quando a lista estiver vazia (length === 0)
+    -->
+    <ion-item *ngIf="!tasks.length">
+      <ion-note>
+        empty list
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <!-- Leia mais sobre os eventos do angular aqui: https://angular.io/guide/user-input -->
+    <!-- Botao que navega pra TaskPage -->
+    <button ion-fab color="primary" navPush="TaskPage">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>
